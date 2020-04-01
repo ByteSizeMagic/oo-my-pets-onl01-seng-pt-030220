@@ -42,7 +42,7 @@ class Owner
     Dog.new(dog, self)
   end
 
-  def walk_dogs(dog)
+  def walk_dogs
     exercised_dog = Dog.all.find {|dogs| dogs.owner == self}
     exercised_dog.mood = "happy"
   end
