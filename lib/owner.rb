@@ -47,4 +47,9 @@ class Owner
     exercised_dog.mood = "happy"
   end
 
+  def feed_cats
+    fed_cat = Cat.all.find {|cats| cats.owner == self}
+    fed_cat.mood = "happy"
+  end
+
 end
